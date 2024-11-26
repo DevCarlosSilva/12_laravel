@@ -16,17 +16,17 @@ class Item extends Model
         'status',
         'return_date',
         'returned_to',
-        'categories_id',
-        'locations_id'
+        'category_id',
+        'location_id'
     ];
 
     public function category()
     {
-        return $this->belongsTo(Category::class, 'categories_id');
+        return $this->belongsTo(Category::class, 'category_id');
     }
 
     public function location()
     {
-        return $this->belongsTo(Location::class, 'locations_id');
+        return $this->belongsTo(Location::class, 'location_id');
     }
 }

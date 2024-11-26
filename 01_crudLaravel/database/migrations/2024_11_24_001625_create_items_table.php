@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('status');
             $table->date('returned_date')->nullable();
             $table->string('returned_to')->nullable();
-            $table->unsignedBigInteger('categories_id')->constrained()->onDelete('cascade');
-            $table->unsignedBigInteger('locations_id')->constrained()->onDelete('cascade');
+            $table->unsignedBigInteger('category_id')->constrained()->onDelete('cascade');
+            $table->unsignedBigInteger('location_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

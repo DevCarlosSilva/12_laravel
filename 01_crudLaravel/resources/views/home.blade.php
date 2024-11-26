@@ -8,5 +8,5 @@
 <hr>
 <a href=" {{ route('reports.index') }} ">Reports index</a>
 <hr>
-<a href=" {{ route('dashboard') }} ">Admin dashboard</a>
+<a href=" {{ route('adminPanel') }} ">Admin panel</a>
 @endsection

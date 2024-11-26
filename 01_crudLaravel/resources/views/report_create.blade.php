@@ -15,13 +15,13 @@
     <label for="report_date">Report date:</label>
     <input type="date" name="report_date" id="report_date">
     <input type="text" name="reporter_name" placeholder="Reporter name">
-    <select name="categories_id">
+    <select name="category_id">
         <option value="" disabled selected>Choose a category</option>
         @foreach($categories as $category)
         <option value="{{ $category->id }}">{{ $category->name }}</option>
         @endforeach
     </select>
-    <select name="locations_id">
+    <select name="location_id">
         <option value="" disabled selected>Choose a location</option>
         @foreach($locations as $location)
         <option value="{{ $location->id }}">{{ $location->name }}</option>

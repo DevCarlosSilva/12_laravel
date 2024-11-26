@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('description');
             $table->date('report_date');
             $table->string('reporter_name');
-            $table->unsignedBigInteger('categories_id')->constrained()->onDelete('cascade');
-            $table->unsignedBigInteger('locations_id')->constrained()->onDelete('cascade');
+            $table->unsignedBigInteger('category_id')->constrained()->onDelete('cascade');
+            $table->unsignedBigInteger('location_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

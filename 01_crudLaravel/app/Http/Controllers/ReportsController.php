@@ -44,8 +44,8 @@ class ReportsController extends Controller
             'description' => $request->input('description'),
             'report_date' => $request->input('report_date'),
             'reporter_name' => $request->input('reporter_name'),
-            'categories_id' => $request->input('categories_id'),
-            'locations_id' => $request->input('locations_id'),
+            'category_id' => $request->input('category_id'),
+            'location_id' => $request->input('location_id'),
         ]);
         if ($created) {
             return redirect()->back()->with('message', 'Successfully created');

@@ -14,13 +14,13 @@
   <input type="text" name="description" placeholder="Item description">
   <label for="found_date">Date of find:</label>
   <input type="date" name="found_date" id="found_date">
-  <select name="categories_id">
+  <select name="category_id">
     <option value="" disabled selected>Choose a category</option>
     @foreach($categories as $category)
     <option value="{{ $category->id }}">{{ $category->name }}</option>
     @endforeach
   </select>
-  <select name="locations_id">
+  <select name="location_id">
     <option value="" disabled selected>Choose a location</option>
     @foreach($locations as $location)
     <option value="{{ $location->id }}">{{ $location->name }}</option>

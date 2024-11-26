@@ -43,8 +43,8 @@ class ItemsController extends Controller
             'name' => $request->input('name'),
             'description' => $request->input('description'),
             'found_date' => $request->input('found_date'),
-            'categories_id' => $request->input('categories_id'),
-            'locations_id' => $request->input('locations_id'),
+            'category_id' => $request->input('category_id'),
+            'location_id' => $request->input('location_id'),
             'status' => $request->input('status')
         ]);
         if ($created) {
