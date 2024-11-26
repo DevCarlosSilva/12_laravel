@@ -2,7 +2,7 @@
 
 @section('content')
 <a href="{{ route('home') }}">Go back</a>
-<h2>Dashboard</h2>
+<h2>Admin Panel</h2>
 <hr>
 <a href=" {{ route('users.index') }} ">Categories</a>
 <hr>

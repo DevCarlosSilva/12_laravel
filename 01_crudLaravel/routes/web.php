@@ -7,7 +7,7 @@ use App\Http\Controllers\ItemsController;
 use App\Http\Controllers\ReportsController;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
-Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
+Route::get('/dashboard', [HomeController::class, 'adminPanel'])->name('adminPanel');
 // Route::get('/users', [UserController::class, 'index'])->name('users.index');
 // Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
 // Route::post('/users', [UserController::class, 'store'])->name('users.store');
